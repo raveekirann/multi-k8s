@@ -14,4 +14,8 @@ spec:
         - www.raveekirann.com
     acme:
         config:
-            - {http01: {ingressClass: ngnix}, domains: [raveekirann.com, www.raveekirann.com]}
+            - http01: 
+                ingressClass: ngnix
+              domains: 
+                -  raveekirann.com
+                -  www.raveekirann.com
