@@ -6,7 +6,7 @@ metadata:
 spec:
   secretName: raveekirann-com
   issuerRef:
-    name: letsencrypt-prod01
+    name: letsencrypt-prod
     kind: ClusterIssuer
   commonName: raveekirann.com
   dnsNames:
