@@ -2,20 +2,20 @@
 apiVersion: cert-manager.io/v1alpha2
 kind: Certificate
 metadata:
-    name: raveekirann-com-tls
+  name: raveekirann-com-tls
 spec:
-    secretName: raveekirann-com
-    issuerRef:
-        name: letsencrypt-prod
-        kind: ClusterIssuer
-    commonName: raveekirann.com
-    dnsNames:
-        - raveekirann.com
-        - www.raveekirann.com
-    acme:
-        config:
-            - http01: 
-                ingressClass: ngnix
-              domains: 
-                -  raveekirann.com
-                -  www.raveekirann.com
+  secretName: raveekirann-com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: raveekirann.com
+  dnsNames:
+    - raveekirann.com
+    - www.raveekirann.com
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - raveekirann.com
+          - www.raveekirann.com
